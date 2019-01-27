@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>mijn planning</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css/planning.css">
+</head>
+<body>
+<nav><div id="navbar">
+  <a href="homepage.html">Home</a>
+  <a href="voorstelen.html">Wie ben ik</a>
+  <a href="GIP.html">mijn GIP</a>
+  <a href="logboek.html">logboek</a>
+  <a href="stage.html">stage</a>
+  <a class="active" href="planning.html">planning</a>
+  <a href="wireframes.html">wireframes</a>
+  <a href="demo.html">Handleiding</a>
+</div></nav>
+<article>
+<h1>_</h1>
+<p>Het eerste dat ik zo snel mogelijk klaar moet krijgen is mijn cursus op Udemy afwerken.</p>
+<p>Na dat deze cursus klaar is kan ik echt beginen programeren voor mijn spel.</p>
+<p>Het eerste dat ik ga doen is een paar kamers maken en er voor zorgen dat de camera een statis bovenaanzicht heeft van elke kamer vanaf de speler in die kamer gaat.</p>
+<h1>_</h1>
+<p>Daarna ga ik een randomizer maken voor de kamers.</p>
+<p>Daarna ga ik zelf mijn eigen enemy code moeten schrijven.</p>
+<p>Daarna ga ik wapens maken die de speler kan gebruiken om zich te verdedigen.</p>
+<p>Daarna ga ik de enemies een manier geven om de speler aan te vallen.</p>
+<p>En uiteindelijk maak ik een HP systeem voor de speler en de enemies.</p></article>
+<footer><a href="http://www.6clicks.be/"target="_blank">6clicks</a></footer>
+
+<script>
+window.onscroll = function() {myFunction()};
+
+var navbar = document.getElementById("navbar");
+var sticky = navbar.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
+</script>
+</body>
+</html>

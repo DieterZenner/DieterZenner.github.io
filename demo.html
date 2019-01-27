@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>mijn handleiding</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css/stage.css">
+</head>
+<body>
+<nav><div id="navbar">
+  <a href="homepage.html">Home</a>
+  <a href="voorstelen.html">Wie ben ik</a>
+  <a href="GIP.html">mijn GIP</a>
+  <a href="logboek.html">logboek</a>
+  <a href="stage.html">stage</a>
+  <a href="planning.html">planning</a>
+  <a href="wireframes.html">wireframes</a>
+  <a class="active" href="demo.html">Handleiding</a>
+</div></nav>
+<article><h1>_</h1>
+<p>stap 1: Maak een Udemy account en koop "Complete C# Unity Developer 2D: Learn to Code Making Games".</p>
+<p>stap 2: Instaleer Unity.</p>
+<p>stap 3: kijk naar de cursus en codeer mee met de uitleg voor een beter begrip.</p>
+<p>stap 4: Wordt aangevuld met mijn vooruitgang.</p></article>
+<footer><a href="http://www.6clicks.be/"target="_blank">6clicks</a></footer>
+
+<script>
+window.onscroll = function() {myFunction()};
+
+var navbar = document.getElementById("navbar");
+var sticky = navbar.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
+</script>
+</body>
+</html>

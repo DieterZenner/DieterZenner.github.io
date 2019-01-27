@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>mijn GIP</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css/GIP.css">
+</head>
+<body>
+<nav><div id="navbar">
+  <a href="homepage.html">Home</a>
+  <a href="voorstelen.html">Wie ben ik</a>
+  <a class="active" href="GIP.html">mijn GIP</a>
+  <a href="logboek.html">logboek</a>
+  <a href="stage.html">stage</a>
+  <a href="planning.html">planning</a>
+  <a href="wireframes.html">wireframes</a>
+  <a href="demo.html">Handleiding</a>
+</div></nav>
+<article>
+<h1>_</h1>
+<h1>_</h1>
+<h1>_</h1>
+<p>Wat heb je allemaal nodig?</p>
+<p>1: Een Udemy account.</p>
+<p>2: De cursus "Complete C# Unity Developer 2D: Learn to Code Making Games".</p>
+<p>3: Unity Hub</p>
+<p>4: De meest recente versie van de Unity engine.</p>
+<p>5: Weten hoe je tewerk gaat met de codeer taal C#.</p>
+<p>6: 2D sprites voor je achtergrond, voorgrond, charachter, enemies, wapens en bosses.</p>
+<h1>_</h1>
+<p><img src="images/g1.png" style="width:400px; height:250px;"> <img src="images/base.png" style="width:400px; height:250px;"></p>
+<h1>_</h1>
+<h1>_</h1>
+<h1>_</h1>
+<h1>_</h1>
+<h1>_</h1>
+<h1>_</h1>
+<h1>_</h1>
+<h1>_</h1>
+<h1>_</h1>
+<p>Het uiteindelijke doel van mijn GIP is om een 2D shooter/dungeon explorer game met een top-down view te maken. </p>
+<p>De dungeon in de game zal 3 verdiepingen hebben met elk 50 willekeurige kamers en 1 boss kamer.</p>
+<p>Er zijn in totaal 3 bosses elk van die bosses dropt een stuk van een sleutel die nodig is om te ontsnappen uit de dungeon.</p>
+<p>De camera die de speler volg staat statis gefocised op he midden van de kamer waarin de speler zich bevindt. De camera gaat mee met de speler als de speler naar een nieuwe kamer gaat.</p>
+<h1>_</h1>
+<p>Elke kamer heeft 4 deuren behalve de kamers op de zijkanten en hoeken van de map.</p>
+<p>De speler heeft 1 leven en elke checkpoint is in het begin van de verdieping. </p>
+<p>De eerste boss heeft 1500 hp, de tweede heeft 2000 hp en de derde 3000 hp.</p>
+<p>Elke enemy en boss heeft enkel lange afstan aanvallen die de speler moet ontwijken om te overleven.</p>
+<p>De enemies op de eerste verdieping hebben 100-175 hp, op de tweede verdieping 175-250 hp en op het derde verdiep 300-400hp</p>
+<p>Het wapen dat de speler gebruikt wordt geüpgraded met elke boss dat de speler verslaat.</p>
+<p>In het begin doet het wapen van de speler 25 damage, op het tweede verdiep 35 damage en op het derde verdiep 50 damage.</p>
+<p>Het naam van mijn spel is Deezer's Dungeon.</p>
+<h1>_</h1>
+<p>Momenteel leer ik hoe ik tewerk moet gaan met C# en de Unity engine met behulp van de cursus op Udemy.</p>
+</article>
+<footer><a href="http://www.6clicks.be/"target="_blank">6clicks</a></footer>
+
+<script>
+window.onscroll = function() {myFunction()};
+
+var navbar = document.getElementById("navbar");
+var sticky = navbar.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
+</script>
+</body>
+</html>

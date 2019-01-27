@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>contactinfo</title>
+<link rel="stylesheet" href="css/stylesheet.css">
+</head>
+ <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+<body>
+<nav>
+<div id="navbar">
+  <a href="homepage.html">Home</a>
+  <a class="active" href="contactinfo.html">Contact</a>
+  <a href="https://www.facebook.com/interieurstyliste/?ref=br_rs" target="_blank">Facebook</a>
+   <h1>logo</h1>
+</div>
+</nav>
+<header>
+<div class="slideshow-container">
+  <div class="mySlides slide fade">
+    <div class="numbertext"></div>
+    <img src="images/image1.jpg" style="width:88.9%">	
+  </div>
+  <div class="mySlides fade">
+    <div class="numbertext"></div>
+    <img src="image2.jpg" style="width:88.9%">
+  </div>
+  <div class="mySlides fade">
+    <div class="numbertext"></div>
+    <img src="image3.jpg" style="width:88.9%">
+  </div>
+  <div class="mySlides fade">
+    <div class="numbertext"></div>
+    <img src="image4.jpg" style="width:88.9%">
+  </div>
+  <div class="mySlides fade">
+    <div class="numbertext"></div>
+    <img src="image5.jpg" style="width:88.9%">
+  </div>
+  <div class="mySlides fade">
+    <div class="numbertext"></div>
+    <img src="image6.jpg" style="width:88.9%">
+  </div>
+  <div class="mySlides fade">
+    <div class="numbertext"></div>
+    <img src="image7.jpg" style="width:88.9%">
+  </div>
+  <div class="mySlides fade">
+    <div class="numbertext"></div>
+    <img src="image8.jpg" style="width:88.9%">
+	</div>
+</div>
+<br>
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+  <span class="dot" onclick="currentSlide(3)"></span>
+  <span class="dot" onclick="currentSlide(4)"></span>
+  <span class="dot" onclick="currentSlide(5)"></span>
+  <span class="dot" onclick="currentSlide(6)"></span>
+  <span class="dot" onclick="currentSlide(7)"></span>
+  <span class="dot" onclick="currentSlide(8)"></span>
+</div>
+</header>
+<article><h4>Messenger: m.me/interieurstyliste</h4>
+<p>Hotmail: marinojoke@hotmail.com</p></article>
+<footer>
+<h5>Info<br>
+interieurstylist<br>
+advies geven over kleuren en vormen in u interieur<br>
+moodboards<br>
+2D & 3D plan aanmaken<br>
+uitwerken van plannen<br></h5>
+</footer>
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 5000);
+}
+
+window.onscroll = function() {myFunction()};
+
+var navbar = document.getElementById("navbar");
+var sticky = navbar.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
+</script>
+
+</body>
+</html>
